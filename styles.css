@@ -4,18 +4,18 @@ body, html{
 body{
   margin: 0px;
   /* background-color:#444; */
-  background-image: url('https://wallpaperdj.com/wallpapers/qlimax_festival-1920x1080.jpg');
-  height: 500px;
+  background-image: url('https://nexus.leagueoflegends.com/wp-content/uploads/2019/06/08_Arena_Skin_aklaxtr9votmw3ays8vp.png');
+  /* height: 500px; */
   background-position: center;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-size: cover;
-  position: relative;
+  /* position: relative; */
   /* font-size: 18px; */
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addDancerButton{
+.title, .addDancerButton, .lineUpButton, .addBouncyDancerButton, .addSpinningDancerButton {
   padding:5px 12px;
   float:right;
 }
@@ -27,7 +27,14 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
   position:absolute;
 }
+.image{
+  width: 300px;
+  height: auto
+;}
+/* #blinky{
+  border:10px solid yellow;
+  border-radius:10px;
+  position:absolute;
+} */

@@ -1,35 +1,56 @@
-describe('blinkyDancer', function() {
+// var merge = function(arr1, arr2, callback) {
+//   let mergedArr = [];
 
-  var blinkyDancer, clock;
+//   for (let i = 0 ; i < arr1.length; i++) {
+//     mergedArr.push(callback(arr1[i], arr2[i]);)
+//   }
+
+//   return mergedArr;
+// };
+
+// var euclid = function(coords1, coords2) {
+//   let squaredDeltas = merge(coords1, coords2, function(a, b) {
+//     return Math.abs((a - b) * (a - b));
+//   });
+
+//   let answer = Math.sqrt(squaredDeltas[0], squaredDeltas[1]);
+
+//   return answer;
+// }
+
+
+describe('makeBlinkyDancer', function() {
+
+  var makeBlinkyDancer, clock;
   var timeBetweenSteps = 100;
 
   beforeEach(function() {
     clock = sinon.useFakeTimers();
-    // changed to include new keyword and capitalized BlinkyDancer
-    blinkyDancer = new BlinkyDancer(10, 20, timeBetweenSteps);
+    // changed to include new keyword and capitalized makeBlinkyDancer
+    makeBlinkyDancer = new BlinkyDancer(10, 20, timeBetweenSteps);
   });
 
   it('should have a jQuery $node object', function() {
-    expect(blinkyDancer.$node).to.be.an.instanceof(jQuery);
+    expect(makeBlinkyDancer.$node).to.be.an.instanceof(jQuery);
   });
 
   it('should have a step function that makes its node blink', function() {
-    sinon.spy(blinkyDancer.$node, 'toggle');
-    blinkyDancer.step();
-    expect(blinkyDancer.$node.toggle.called).to.be.true;
+    sinon.spy(makeBlinkyDancer.$node, 'toggle');
+    makeBlinkyDancer.step();
+    expect(makeBlinkyDancer.$node.toggle.called).to.be.true;
   });
 
   describe('dance', function() {
     it('should call step at least once per second', function() {
-      sinon.spy(blinkyDancer, 'step');
-      expect(blinkyDancer.step.callCount).to.be.equal(0);
+      sinon.spy(makeBlinkyDancer, 'step');
+      expect(makeBlinkyDancer.step.callCount).to.be.equal(0);
       clock.tick(timeBetweenSteps); // ? it seems an extra tick is necessary...
       clock.tick(timeBetweenSteps);
 
-      expect(blinkyDancer.step.callCount).to.be.equal(1);
+      expect(makeBlinkyDancer.step.callCount).to.be.equal(1);
 
       clock.tick(timeBetweenSteps);
-      expect(blinkyDancer.step.callCount).to.be.equal(2);
+      expect(makeBlinkyDancer.step.callCount).to.be.equal(2);
     });
   });
 });
