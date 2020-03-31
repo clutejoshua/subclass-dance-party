@@ -22,22 +22,22 @@ $(document).ready(function() {
 
     // make a dancer with a random position
 
-    var dancer = dancerMakerFunction(
+    var dancer = new dancerMakerFunction(
       $('body').height() * Math.random(),
       $('body').width() * Math.random(),
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
-    window.dancers.push(dancer);
+    // window.dancers.push(dancer);
   });
 });
 
 // create line up dancer method
-$('.lineUpButton').on('click', function(event) {
-  // iterate through dancers array
-  // for each dancer..
-  // apply lineUp method
-});
+// $('.lineUpButton').on('click', function(event) {
+//   // iterate through dancers array
+//   // for each dancer..
+//   // apply lineUp method
+// });
 
 // make dancers interact with other dancers using pythagorean Theorem
 
