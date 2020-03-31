@@ -21,7 +21,9 @@ body, a:link, a:visited, a:active{
 }
 
 button{
-  border-radius: 7px;
+  /* box-shadow: */
+  /* border-color: grey; */
+  /* border-radius: 7px; */
 }
 .topbar{
   height:32px;
@@ -39,11 +41,7 @@ button{
 }
 
 .image:hover{
-  width: 200px;
-  height: auto;
+  /* width: 150px;
+  height: auto; */
+  filter: grayscale(100%);
 }
-/* #blinky{
-  border:10px solid yellow;
-  border-radius:10px;
-  position:absolute;
-} */
