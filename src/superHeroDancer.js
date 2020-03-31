@@ -1,11 +1,11 @@
-var superHeroDancer = function() {
+var SuperHeroDancer = function() {
   Dancer.apply(this, arguments);
 };
 
-superHeroDancer.prototype = Object.create(Dancer.prototype);
-superHeroDancer.prototype.constructor = superHeroDancer;
+SuperHeroDancer.prototype = Object.create(Dancer.prototype);
+SuperHeroDancer.prototype.constructor = SuperHeroDancer;
 
-superHeroDancer.prototype.step = function() {
+SuperHeroDancer.prototype.step = function() {
   Dancer.prototype.step.call(this);
   this.$node.toggle();
 };

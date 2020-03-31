@@ -28,6 +28,17 @@ $(document).ready(function() {
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
+    window.dancers.push(dancer);
   });
 });
 
+// create line up dancer method
+$('.lineUpButton').on('click', function(event) {
+  // iterate through dancers array
+  // for each dancer..
+  // apply lineUp method
+});
+
+// make dancers interact with other dancers using pythagorean Theorem
+
+// make a dancer that reacts to the mouse using jQuery to add a mouseover handler
