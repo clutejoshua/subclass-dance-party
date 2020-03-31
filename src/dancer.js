@@ -9,6 +9,10 @@ Dancer.prototype.step = function() {
   setTimeout(this.step.bind(this), this.timeBetweenSteps);
 };
 
+Dancer.prototype.lineUp = function() {
+  this.setPosition(350, $('body').height() * Math.random());
+};
+
 Dancer.prototype.setPosition = function (top, left) {
   var styleSettings = {
     top: top,
