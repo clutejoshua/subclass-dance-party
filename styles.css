@@ -19,6 +19,10 @@ body, a:link, a:visited, a:active{
   padding:5px 12px;
   float:right;
 }
+
+button{
+  border-radius: 7px;
+}
 .topbar{
   height:32px;
   background-color: #555;
@@ -31,8 +35,13 @@ body, a:link, a:visited, a:active{
 }
 .image{
   width: 300px;
-  height: auto
-;}
+  height: auto;
+}
+
+.image:hover{
+  width: 200px;
+  height: auto;
+}
 /* #blinky{
   border:10px solid yellow;
   border-radius:10px;

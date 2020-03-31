@@ -10,7 +10,7 @@ Dancer.prototype.step = function() {
 };
 
 Dancer.prototype.lineUp = function() {
-  this.setPosition(350, $('body').height() * Math.random());
+  this.setPosition(250, $('body').height() * Math.random());
 };
 
 Dancer.prototype.setPosition = function (top, left) {

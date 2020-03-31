@@ -1,24 +1,3 @@
-// var merge = function(arr1, arr2, callback) {
-//   let mergedArr = [];
-
-//   for (let i = 0 ; i < arr1.length; i++) {
-//     mergedArr.push(callback(arr1[i], arr2[i]);)
-//   }
-
-//   return mergedArr;
-// };
-
-// var euclid = function(coords1, coords2) {
-//   let squaredDeltas = merge(coords1, coords2, function(a, b) {
-//     return Math.abs((a - b) * (a - b));
-//   });
-
-//   let answer = Math.sqrt(squaredDeltas[0], squaredDeltas[1]);
-
-//   return answer;
-// }
-
-
 describe('makeBlinkyDancer', function() {
 
   var makeBlinkyDancer, clock;
@@ -26,7 +5,7 @@ describe('makeBlinkyDancer', function() {
 
   beforeEach(function() {
     clock = sinon.useFakeTimers();
-    // changed to include new keyword and capitalized makeBlinkyDancer
+    // changed to include new keyword and capitalized BlinkyDancer
     makeBlinkyDancer = new BlinkyDancer(10, 20, timeBetweenSteps);
   });
 
