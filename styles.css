@@ -12,26 +12,30 @@ body{
   /* position: relative; */
   /* font-size: 18px; */
 }
-body, a:link, a:visited, a:active{
+/* body, a:link, a:visited, a:active{
   color: lightblue;
+} */
+.title{
+  font-weight: bold;
 }
 .title, .addDancerButton, .lineUpButton, .addBouncyDancerButton, .addSpinningDancerButton {
   padding:5px 12px;
+  text-align: center;
   float:right;
+  font-size: 27px;
 }
 
 button{
-  /* box-shadow: */
-  /* border-color: grey; */
-  /* border-radius: 7px; */
+  border-radius: 7px;
+}
+button:hover{
+  background-color: #6d889d;
 }
 .topbar{
-  height:32px;
-  background-color: #555;
+  height: 44px;
+  background-color: #6d889d;
 }
-.title{
-  background-color: #777;
-}
+
 .dancer{
   position:absolute;
 }
@@ -41,7 +45,5 @@ button{
 }
 
 .image:hover{
-  /* width: 150px;
-  height: auto; */
   filter: grayscale(100%);
 }

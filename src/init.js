@@ -31,7 +31,7 @@ $(document).ready(function() {
 
   });
 
-  // $('.dancer').on('mouseover', function(event) {
+  // $('.image').on('mouseover', function(event) {
 
   // });
 
